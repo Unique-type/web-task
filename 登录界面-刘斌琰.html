@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="zh-ch">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>任务二登录界面</title>
+    <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="./登录界面-刘斌琰.css">
+</head>
+<body>
+<div class="runimg"> 
+        <script type="text/javascript">
+        //设置定时器
+        window.setInterval("changeImage()",1000);
+        var count =1;    //在调用函数的时候0.jpg已经显示，如果num=0，那么在执行下面函数时，0.jpg会再次显示2秒
+        //设置寻找图片的函数
+        function changeImage() {
+            var img = document.getElementById("img");//img对象就相当于img标签
+            if (count < 3) {
+                img.src = "jpg/" + count + ".jpg";
+                count++;
+            }else {
+                count= 0;
+                changeImage();
+            }
+        }
+    </script>
+    <img src="jpg/1.jpg" id="img" width="200px" height="200px" alt="">
+</div>
+   
+
+    <div class="login">
+       <div class="title">team</div>
+        <form class="form">
+            <div>
+                <input type="text" id="username"  placeholder="用户名" >
+            </div>
+           <div>
+               <span id="check1" style="color:red; font-size: 13px;"></span>
+           </div>
+           <div>
+                 <input type="password" id="password"   placeholder="密码" >
+           </div>
+           <div>
+               <span id="check2" style="color: red; font-size: 13px;"></span>
+            </div>
+            <input id="提交" class="button" type="submit"  value="提交" onclick="return checkform()">
+            
+        </form>
+    </div>
+    <script type="text/javascript">
+       function checkform()
+       {
+           var username=document.getElementById("username").value;
+           var password=document.getElementById("password").value;
+           if(username.length<=0)
+           {
+               document.getElementById("check1").innerHTML="账户不能为空";
+      
+           }
+           if(password.length<=0)
+           {
+               document.getElementById("check2").innerHTML="密码不能为空";
+               return false;
+           }
+            if(username.length<=0&&password.length<=0)
+            {
+                document.getElementById("check1").innerHTML="账户不能为空";
+                document.getElementById("check2").innerHTML="密码不能为空";
+                return false;
+            }   
+       }
+    
+    </script>
+    
+    
+</body>
+</html>

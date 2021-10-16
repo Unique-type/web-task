@@ -1,0 +1,55 @@
+.runimg{
+    margin-left: 20%;
+}
+.login{
+    margin-left: 40%;
+    margin-right: 40%;
+    padding:50px 2px;
+    box-shadow: 5px 5px 5px 5px  rgba(0, 0, 0, .05);
+}
+.login  .title{
+    color:#008c8c;
+    font-size:xx-large;
+   text-align: center;
+}
+.login .form{
+    text-align: center;
+}
+input:focus::-webkit-input-placeholder{
+    color:transparent;
+}
+input[type="password"]{
+    width: 90%;
+    border:1px solid rgb(100, 88, 88);
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    height: 34px;
+    background-size: 25px 25px;
+    background-position: 5px 4px;
+    background-repeat: no-repeat;
+    padding:0px 0px 0px 40px;
+    background-image: url(./jpg/密码.png);
+}
+
+input[type="text"]{
+    width: 90%;
+    border:1px solid rgb(100, 88, 88);
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    height: 34px;
+    background-size: 25px 25px;
+    background-position: 5px 4px;
+    background-repeat: no-repeat;
+    padding:0px 0px 0px 40px;
+    background-image: url(./jpg/用户\ .png);
+}
+.form .button{
+    margin-top: 25px;
+    border-radius: 3px;
+    padding: 3% 30%;
+    background-color: #008c8c;
+    color: #fff;
+    font-size: 15px;
+}
