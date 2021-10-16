@@ -1,0 +1,45 @@
+
+.clearfix::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.header {
+    /* background-color: #005691; */
+    background-color: #0e6bc2;
+    height: 50px;
+   padding: 0 10%;
+   /* overflow: hidden; */
+}
+.header .topnav>li{
+    display:inline-block;
+    float: left;
+    color: #fff;
+    font-size: 16px;
+    text-align: center;
+    line-height: 50px;
+    width: 144px;
+}
+.header .topnav  a{
+color: #fff;
+text-decoration: none;
+}
+.header .topnav  a.mainbutton{
+    padding: 15px 40px;
+}
+.header .topnav  a.submenu{
+ font-size: 13px;
+}
+.header .topnav>li .mainbutton:hover{
+    background-color: #005691;
+}
+.header .topnav>li  .submenu{
+    display: none;
+}
+.header .topnav>li:hover .submenu{
+    display: block;
+    background-color: #0e6bc2;
+}
+.header .topnav>li:hover .submenu:hover{
+    background-color: #005691;
+}
